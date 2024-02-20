@@ -1,0 +1,29 @@
+format = """
+$username\
+
+[](bg:#5277c3 fg:#ffffff)\
+$directory\
+[ ](fg:#5277c3)\ 
+\
+"""
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+# You can also replace your username with a neat symbol like   or disable this
+# and use the os module below
+
+[directory]
+
+style = "bg:#5277c3 fg:#ffffff"
+format = "[  $path ]($style)" 
+truncation_length = 4
+truncation_symbol = "…/"
+
+
+[username]
+show_always = true
+style_user = "bg:#ffffff fg:#5277c3"
+style_root = "bg:#ffffff"
+format = '[  ]($style)' 
+disabled = false
